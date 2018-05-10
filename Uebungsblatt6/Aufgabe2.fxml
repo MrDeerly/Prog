@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="300.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Uebungsblatt6.Aufgabe2Controller">
+    <top>
+        <ToolBar fx:id="toolbar" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <items>
+                <Button fx:id="buttonOpen" mnemonicParsing="false" onAction="#buttonClick" text="open"/>
+                <Button fx:id="buttonSave" mnemonicParsing="false" onAction="#buttonClick" text="save"/>
+                <Button fx:id="buttonSaveAs" mnemonicParsing="false" onAction="#buttonClick" text="saveAs"/>
+            </items>
+        </ToolBar>
+    </top>
+    <left>
+        <ImageView fx:id="ImageView" fitHeight="150.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true"
+                   BorderPane.alignment="CENTER"/>
+    </left>
+    <center>
+        <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER"/>
+    </center>
+    <bottom>
+        <HBox fx:id="hbox" prefHeight="100.0" prefWidth="75.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="buttonPrev" mnemonicParsing="false" onAction="#buttonClick" text="prev"/>
+                <Button fx:id="buttonNext" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#buttonClick"
+                        text="next" textAlignment="CENTER" translateX="259.0"/>
+            </children>
+        </HBox>
+    </bottom>
+    <opaqueInsets>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </opaqueInsets>
+</BorderPane>
