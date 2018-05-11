@@ -64,7 +64,7 @@ public class Aufgabe1Controller {
         int b = Integer.parseInt(text2.getText());
         int c = Integer.parseInt(text1.getText());
 
-        labelerg.setText("Gesamt: " + ((a * 50) + (b * 2) + c));
+        labelerg.setText("Gesamt: " + ((a * 0.5) + (b * 0.02) + (c * 0.01)+" Euro"));
     }
 
 
